@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="cabecera">
+            <h1>Calculadora</h1>
+            <div class="selector-tema">
+                <span>TEMA</span>
+                <label class="switch">
+                    <input type="range" min="1" max="3" value="1" id="tema-slider">
+                    <span class="slider"></span>
+                    
+                </label>
+            </div>
+        </header>
+
+        <main class="calculadora">
+            <div class="pantalla">
+                <output id="resultado">0</output>
+                <div id="historial"></div>
+            </div>
+            <div class="teclado">
+                <button class="tecla reset" data-accion="reset">RESET</button>
+                <button class="tecla borrar" data-accion="borrar">DEL</button>
+                <button class="tecla operador" data-valor="/">/</button>
+                
+                <button class="tecla" data-valor="7">7</button>
+                <button class="tecla" data-valor="8">8</button>
+                <button class="tecla" data-valor="9">9</button>
+                <button class="tecla operador" data-valor="*">×</button>
+                
+                <button class="tecla" data-valor="4">4</button>
+                <button class="tecla" data-valor="5">5</button>
+                <button class="tecla" data-valor="6">6</button>
+                <button class="tecla operador" data-valor="-">-</button>
+                
+                <button class="tecla" data-valor="1">1</button>
+                <button class="tecla" data-valor="2">2</button>
+                <button class="tecla" data-valor="3">3</button>
+                <button class="tecla operador" data-valor="+">+</button>
+                
+                <button class="tecla" data-valor="0">0</button>
+                <button class="tecla" data-valor=".">.</button>
+                <button class="tecla operador igual" data-valor="=">=</button>
+            </div>
+        </main>
+    </div>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>

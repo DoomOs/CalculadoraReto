@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background-color: var(--fondo-pantalla);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.tecla {
+    background-color: var(--tecla-normal);
+    color: var(--texto-tecla-normal);
+    border: none;
+    padding: 1rem;
+    min-height: 60px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px var(--sombra-tecla-normal);
+    transition: all 0.2s ease;
+    user-select: none;
+}
